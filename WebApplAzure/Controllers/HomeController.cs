@@ -27,6 +27,11 @@ namespace WebApplAzure.Controllers
             return View("Index", model);
         }
 
+        public IActionResult Test()
+        {
+            throw new InvalidOperationException("Test method was failed!");
+        }
+
         public IActionResult Privacy()
         {
             return View();
